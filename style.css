@@ -1,0 +1,160 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    font-family: "Gabarito", sans-serif;
+}
+.navbar{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid black 1px;
+    gap: 10px;
+}
+.navbar--sec1__title{
+    color:#a435f0;
+}
+.navbar--sec2{
+    padding: 10px;
+    border-radius: 30px;
+    width: 60%;
+    border: solid black 1px;
+    display: flex;
+    gap: 10px;
+    text-align: center;
+
+}
+.navbar--sec2 input{
+    border:none;
+    font-size: 16px;
+    width: 100% ;
+}
+.navbar--sec2 input:focus{
+    outline: none;
+}
+.navbar--sec3{
+    display: flex;
+    padding: 10px;
+    gap: 15px;
+    text-align: center;
+}
+/* category */
+.cate--container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    border: solid black 1px;
+    padding: 10px;
+    gap: 10px; 
+}
+.cate--container p {
+    background-color: #a435f0;
+    border-radius: 30px;
+    color: white;
+    padding: 10px; 
+    display: flex;
+    justify-content: space-between;   
+    
+}
+/* sale image */
+.sale__image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.sale__image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* recommended */
+.recommended{
+    padding: 10px;
+
+}
+
+.course__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.course--card{
+    
+    width: 320px;
+    padding: 10px;
+}
+
+.course--card img{
+    height: 50% ;
+    width: 100%;
+}
+.course--card__title{
+    font-size: 18px;
+    font-weight: 500px;
+}
+
+/* topics */
+.topics__container{
+    display: flex;
+    gap: 10px;
+     margin-top: 15px;
+     flex-wrap: wrap;
+     margin-left: 10px;
+     margin-right: 10px;
+}
+.topics__container p{
+    border: solid grey 2px;
+    /* border-radius: 20px; */
+    flex-grow: 1;
+    padding: 15px;  
+    flex-basis: 25%;
+}
+.topics__title{
+    margin-left: 10px;
+}
+/* popular section */
+.popular{
+    padding: 10px;
+}
+.popular__container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+/* footer */
+.footer{
+    padding: 30px;
+    background-color: black;
+    color: white;
+}
+.footer__one{
+    display: flex;
+    gap: 10px;
+    padding: 30px;
+}
+.footer__one p{
+    gap: 10px;
+    margin: 20px;
+}
+.footer__two{
+    justify-content: space-between;
+    display: flex;
+    padding-left: 20px;
+    margin: 20px;
+    align-items: center;
+}
+.footer__two h1{
+    font-size: 50px;
+}
+
