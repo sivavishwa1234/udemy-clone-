@@ -5,17 +5,21 @@
 body{
     font-family: "Gabarito", sans-serif;
 }
-.navbar{
+.navbar {
     padding: 10px;
     display: flex;
     justify-content: space-between;
     border-bottom: solid black 1px;
     gap: 10px;
+    position: sticky;
+    top: 0%;
+    background-color: white;
+    z-index: 1;
 }
-.navbar--sec1__title{
-    color:#a435f0;
+.navbar--sec1__title {
+    color: #a435f0;
 }
-.navbar--sec2{
+.navbar--sec2 {
     padding: 10px;
     border-radius: 30px;
     width: 60%;
@@ -23,21 +27,45 @@ body{
     display: flex;
     gap: 10px;
     text-align: center;
-
+    background-color: white;
 }
-.navbar--sec2 input{
-    border:none;
+.navbar--sec2 input {
+    border: none;
     font-size: 16px;
-    width: 100% ;
+    width: 100%;
+    background-color: transparent;
 }
-.navbar--sec2 input:focus{
+.navbar--sec2 input:focus {
     outline: none;
 }
-.navbar--sec3{
+.navbar--sec3 {
     display: flex;
     padding: 10px;
     gap: 15px;
     text-align: center;
+    align-items: center;
+}
+
+/* My Learning */
+.myLearning {
+    position: relative;
+    cursor: pointer;
+}
+.myLearning__popup {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    border: solid black 1px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    display: none;
+    z-index: 1;
+}
+.myLearning:hover .myLearning__popup {
+    display: block;
 }
 /* category */
 .cate--container {
@@ -55,25 +83,45 @@ body{
     padding: 10px; 
     display: flex;
     justify-content: space-between;   
+    cursor: pointer;
+    border: solid #a435f0 1px;
     
 }
-/* sale image */
-.sale__image {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    text-align: center;
+.cate--container p:hover{
+    transition: 2s;
+    color: #a435f0;
+    background-color: white;
+    border: solid #a435f0 1px;
 }
-
+/* sale image */
 .sale__image img {
     width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
 }
-
+.sale-image__offer{
+    width: 35;
+    border: solid black 2px;
+    background-color: white;
+    padding: 20px;
+    width: 500px;
+    position: absolute;
+    top: 27%;
+    left: 8%;
+    animation-name: zoom;
+    animation-duration: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+@keyframes zoom {
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    
+}
 /* recommended */
 .recommended{
     padding: 10px;
